@@ -1,0 +1,93 @@
+﻿<!--기본 레이아웃 코드-->
+<!--부트스트랩 사용-->
+<!--구분을 위해 색은 대충 넣어놨어요-->
+<!--완성된 후에 웹 반응형 레이아웃으로 전환하기-->
+<!--구분용 색상 지우고 테두리로 구역만 나눌 것. 눈에 잘 들어오도록 굵게-->
+<!doctype html>
+<html lang="ko"> 
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> 
+    <title>가천강추</title> 
+    <style>
+        #wrap{width: 100%; margin: 0; text-align: center;}
+        .nav1{float: left; width: 40%; height: 20%; line-height: 300px; text-align: left;}
+        .nav2{float: left; width: 60%; height: 20%; line-height: 300px; text-align: left;}
+        .content1{float: left; width: 100%; height: 0px; line-height: 100%; border: 3px solid; border-color: rgb(100, 149, 255); text-align: center; background-color: rgb(205, 221, 255);}
+        .content01{float: left; width: 100%; height: 150px; line-height: 100%; border: 3px; border-color: rgb(100, 149, 255); text-align: center; background-color: rgb(240, 245, 255);}
+        .content02{float: left; width: 40%; height: 300px; line-height: 30px; border: 3px; border-color: rgb(100, 149, 255); text-align: center;  background-color: rgb(240, 245, 255);}
+        .content03{float: left; width: 60%; height: 300px; line-height: 30px; border: 3px; border-color: rgb(100, 149, 255); text-align: center;  background-color: rgb(240, 245, 255);}
+        .content2{float: left; width: 50%; height: 300px; line-height: 500px; border: 3px solid; border-color: rgb(100, 149, 255); text-align: center;}
+        .content3{float: left; width: 50%; height: 300px; line-height: 500px; border: 3px solid; border-color: rgb(100, 149, 255); text-align: center;}
+        .footer{clear:both; width: 100%; height: 100px; line-height: 100px; border: 3px solid; border-color: rgb(100, 149, 255); background-color: rgb(205, 221, 255);}
+    </style>
+</head> 
+<body> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"> </script> 
+
+    <div id="wrap">
+        <div class="nav1">
+            <a href="http://127.0.0.1:5000"><img src="https://user-images.githubusercontent.com/81917271/167561205-85aa3226-b402-47a1-8307-34367d8be5f0.PNG" width="100%" height="100%" alt="홈으로"></a>
+        </div>
+        <div class="nav2">
+            <a class="btn btn-outline-primary btn-lg" href="https://www.gachon.ac.kr/kor/index.do" target="_blank" role="button">학교 홈페이지</a>  <!--새창으로 열림-->
+            <a class="btn btn-outline-primary btn-lg" href="https://www.gachon.ac.kr/kor/1097/subview.do" target="_blank" role="button">학사요람</a> <!--새창으로 열림-->
+            <a class="btn btn-outline-primary btn-lg" href="https://info.gachon.ac.kr/ssu/showTimetable.do" target="_blank" role="button">강의조회</a> <!--새창으로 열림-->
+            <a class="btn btn-outline-primary btn-lg" href="https://github.com/JiahnChoi/GachonGangChu" target="_blank" role="button">github</a>   <!--새창으로 열림-->
+        </div>
+        <!--<div class="header">
+            <a href="http://127.0.0.1:5000"><img src="https://user-images.githubusercontent.com/81917271/167561205-85aa3226-b402-47a1-8307-34367d8be5f0.PNG" alt="홈으로"></a>
+            
+            </div>
+        <div class="nav">
+            <a href="http://127.0.0.1:5000"><img src="https://user-images.githubusercontent.com/81917271/167561205-85aa3226-b402-47a1-8307-34367d8be5f0.PNG" alt="홈으로"></a>
+        --> <!--<a class="btn btn-outline-primary" href="required2.html" role="button">전공추천</a> --> <!--홈화면에서 넘어감-->
+            <!--<a class="btn btn-outline-primary" href="/subject" role="button">교양추천</a> -->  <!--홈화면에서 넘어감-->
+           <!-- <a class="btn btn-outline-primary btn-block" href="https://www.gachon.ac.kr/kor/index.do" target="_blank" role="button">학교 홈페이지</a>  <!--새창으로 열림-->
+           <!-- <a class="btn btn-outline-primary" href="https://www.gachon.ac.kr/kor/1097/subview.do" target="_blank" role="button">학사요람</a> <!--새창으로 열림-->
+            <!--<a class="btn btn-outline-primary" href="https://info.gachon.ac.kr/ssu/showTimetable.do" target="_blank" role="button">강의조회</a> <!--새창으로 열림-->
+            <!--<a class="btn btn-outline-primary" href="https://github.com/JiahnChoi/GachonGangChu" target="_blank" role="button">github</a>   <!--새창으로 열림-->
+       <!-- </div>
+    -->
+        <div class="content1">
+           <!-- <p>
+                <br><br><br>가천강추는 가천대학교 학생을 위한 강의 추천 프로그램입니다.<br><br>
+                여러분의 흥미를 반영해 맞춤형 추천 서비스를 제공합니다.<br>
+            </p>
+            <h1>가천대학교 강의추천시스템 "가천강추"</h1>-->
+        </div>
+        <div class="content01"></div>
+        <div class="content02">
+            <img src="https://user-images.githubusercontent.com/76103457/170328002-177255bb-f28c-47c7-b9a7-cd5cb3a8da51.png" width="30%">
+            <img src="https://user-images.githubusercontent.com/76103457/170327996-4b4cf468-0bae-4ef6-809e-719c99f872de.png" width=30%">
+        </div>
+        <div class="content03">
+            <p>
+                가천강추는 가천대학교 학생을 위한 강의 추천 프로그램입니다.<br>
+                여러분의 흥미를 반영해 맞춤형 추천 서비스를 제공합니다.
+            </p>
+            <h1>가천대학교 강의추천시스템 "가천강추"</h1>
+        </div>
+        <div class="content2">
+            <p></p>
+            <h3>나와 비슷한 선배가 수강한 전공과목은??</h3>
+            <form action ="/move1" method="post">
+                <input type="submit" style="height: 80px;width: 200px;" value="전공추천">  <!--홈화면에서 넘어감-->
+            </form>
+        </div>
+        <div class="content3">
+            <p></p>
+            <h3>내가 흥미롭게 수강한 과목과 유사한 교양과목은?</h3>
+            <form action ="/move2" method="post">
+                <center><input type="submit" style="height: 80px;width: 200px;" value="교양추천" /></center>  <!--홈화면에서 넘어감-->
+            </form>
+        </div>
+        <div class="footer">
+            <p>가천대 소프트웨어학과 졸업작품</p>
+            <a class="btn btn-link" href="#" role="button">맨 위로</a>      <!--페이지 맨 위로 점프-->
+        </div>
+    </div>
+</body> 
+</html>

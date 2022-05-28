@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko"> 
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> 
+    <title>가천강추</title> 
+    <style>
+        #wrap{width: 100%; margin: 0; text-align: center;}
+        .nav1{float: left; width: 40%; height: 20%; line-height: 300px; text-align: left;}
+        .nav2{float: left; width: 60%; height: 20%; line-height: 300px; text-align: left;}
+        .content1{width: 100%; height: 1100px; border: 3px solid; border-color: rgb(100, 149, 255); text-align: center;}
+        .footer{clear:both; width: 100%; height: 100px; line-height: 100px; border: 3px solid; border-color: rgb(100, 149, 255); background-color: rgb(205, 221, 255);}
+    </style>
+</head> 
+<body> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"> </script> 
+
+    <div id="wrap">
+        <div class="nav1">
+            <a href="http://127.0.0.1:5000"><img src="https://user-images.githubusercontent.com/81917271/167561205-85aa3226-b402-47a1-8307-34367d8be5f0.PNG" width="100%" height="100%" alt="홈으로"></a>
+        </div>
+        <div class="nav2">
+            <a class="btn btn-outline-primary btn-lg" href="https://www.gachon.ac.kr/kor/index.do" target="_blank" role="button">학교 홈페이지</a>  <!--새창으로 열림-->
+            <a class="btn btn-outline-primary btn-lg" href="https://www.gachon.ac.kr/kor/1097/subview.do" target="_blank" role="button">학사요람</a> <!--새창으로 열림-->
+            <a class="btn btn-outline-primary btn-lg" href="https://info.gachon.ac.kr/ssu/showTimetable.do" target="_blank" role="button">강의조회</a> <!--새창으로 열림-->
+            <a class="btn btn-outline-primary btn-lg" href="https://github.com/JiahnChoi/GachonGangChu" target="_blank" role="button">github</a>   <!--새창으로 열림-->
+        </div>
+        <div class="content1">
+            <p>
+                <br><br><br><br>
+                여러분의 흥미를 반영해 맞춤형 추천 서비스를 제공합니다.
+            </p>
+            <h1>교양추천 페이지</h1>
+            <center><img src="https://user-images.githubusercontent.com/81917271/168728796-8b95ecdd-66e6-4eec-88ec-1f5ec0e4c056.jpg" width="300" height="300"></center>
+            <center>교양 추천 목록입니다 : {{result1}}</center>
+            <center>{% for table in table3 %}
+                {{title3[loop.index]}}
+                {{ table|safe }}
+                {% endfor %}</center>
+        </div><br>
+        
+        <div class="footer">
+            <p>가천대 소프트웨어학과 졸업작품</p>
+            <a class="btn btn-link" href="#" role="button">맨 위로</a>      <!--페이지 맨 위로 점프-->
+        </div>
+    </div>
+</body> 
+</html>

@@ -1,0 +1,37 @@
+h1{
+    color:red;
+    }
+
+.sidebar {
+    display: table-cell;
+    width: 10%;
+    min-width: 50.px;
+    vertical-align: top;
+    margin-left: 20px;
+    background-color: skyblue;
+    justify-content: space-between;
+}
+
+.mainpage {
+    display: table-cell;
+    width: 90%;
+    background-color:skyblue;
+}
+.header{
+    display: table-cell;
+    justify-content: space-between;
+}
+
+.menu{
+    display:flex;
+    font-size:17px;
+    padding-right:40px;
+}
+.menu li{
+    padding-left:20px;
+    list-style:none;
+}
+
+
+
+
